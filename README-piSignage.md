@@ -1,5 +1,7 @@
 # piSignage Swagger Documentation
 
+piSignage specific modifications are in pisignage branch
+
 ## Generate the distribution
 To generate the distribution, run the following commands:
 - npm install (first time only)
