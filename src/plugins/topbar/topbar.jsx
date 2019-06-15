@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 
 //import "./topbar.less"
 import Logo from "./pisignage-logo.png"
+import SwaggerLogo from "./logo_small.svg"
 import {parseSearch, serializeSearch} from "../../core/utils"
 
 export default class Topbar extends React.Component {
@@ -135,9 +136,12 @@ export default class Topbar extends React.Component {
     return (
       <div className="topbar">
         <div className="wrapper">
-          <div className="topbar-wrapper">
+          <div className="topbar-wrapper" style={{"justify-content":"space-between"}}>
             <Link>
-              <img height="40" src={ Logo } alt="Swagger UI"/>
+              <img height="40" src={ Logo } alt="piSignage API"/>
+            </Link>
+            <Link>
+              <img height="40" src={ SwaggerLogo } alt="Swagger UI"/>
             </Link>
             {/*<form className="download-url-wrapper" onSubmit={formOnSubmit}>*/}
             {/*  {control.map((el, i) => cloneElement(el, { key: i }))}*/}
